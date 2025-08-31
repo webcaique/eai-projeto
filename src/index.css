@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 4.88vh 2.6vw;
+  background-color: #5a569b;
+}
+
+.main_conteiner{
+  width: 94.7vw;
+  height: 90.2vh;
+  background-color: white;
+  border-radius: 10px;
+}
