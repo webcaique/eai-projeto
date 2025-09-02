@@ -1,0 +1,25 @@
+.Conversation{
+    background-color: blue;
+    flex-grow: 8;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.InfoConversation{
+    height: 80px;
+    padding: 10px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.info{
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 426px) {
+    .Conversation{
+        display: none;
+    }
+}

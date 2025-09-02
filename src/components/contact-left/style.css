@@ -1,0 +1,147 @@
+.contact_list{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border: 1px solid black;
+    border-radius: 10px 0px 0px 10px;
+    padding: 10px;
+    max-width: 430px;
+}
+
+.TopProfile{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 0;
+    margin-bottom: 10px;
+}
+
+.SearchCoversation{
+    flex-grow: 0;
+}
+
+.searchCoversationText{
+    width: 100%;
+    height: 30px;
+    border-radius: 100px;
+    padding-left: 35px;
+}
+
+.searchIcon{
+    width: 20px;
+    position: absolute;
+    margin: 5px 0px 5px 10px;
+}
+
+.Contacts{
+    flex-grow: 8;
+    flex-direction: column;
+    
+    border-radius: 0;
+    overflow-y: scroll;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-block: 10px;
+    align-items: center;
+    max-width: 200px;
+
+}
+
+.details{
+    margin-left: 10px;
+    max-width: 430px;
+    
+}
+
+.last_message{
+    white-space: nowrap;
+    overflow: hidden; /* Esconde o texto que transborda */
+    text-overflow: ellipsis; /* Adiciona as reticências (...) */
+    max-width: 200px; /* Define um limite de largura para o texto */
+    
+}
+
+.BottomOptions{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    border-radius: 0px;
+    border-top: 1px solid black;
+    max-height: 40px;
+    padding-top: 10px;
+}
+
+.bottomIcon{
+    width: 30px;
+    height: 30px;
+    border-radius: 0;
+    margin-inline: 10px;
+}
+
+.new_messagens{
+    margin-left: 0;
+}
+
+.settings {
+  margin-left: auto;  /* Empurra tudo depois dela para a direita */
+}
+
+.menu{
+    margin-right: 0;
+}
+
+
+@media screen and (min-width: 0px) and (max-width: 426px) {
+    .contact_list{
+        width: 100vw;
+        border: 0px solid black;
+    }
+    .profileIcon{
+        width: 25px;
+        height: 25px;
+    }
+    .searchCoversationText{
+        height: 20px;
+        padding-left: 30px;
+    }
+    .searchIcon{
+        width: 10px;
+        height: 10px;
+    }
+    .last_message{
+        max-width: 75vw;
+    }
+    .bottomIcon{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .contact_list{
+        max-width:300px;
+        border: 0px solid black;        
+    }
+    .last_message{
+        max-width: 175px;
+    }
+    .profileIcon{
+        width: 30px;
+        height: 30px;
+    }
+    .searchCoversationText{
+        height: 25px;
+        padding-left: 30px;
+    }
+    .searchIcon{
+        width: 15px;
+        height: 15px;
+    }
+    .bottomIcon{
+        width: 25px;
+        height: 25px;
+    }
+}
